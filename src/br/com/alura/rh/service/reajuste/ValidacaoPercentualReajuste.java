@@ -1,4 +1,4 @@
-package br.com.alura.rh.service;
+package br.com.alura.rh.service.reajuste;
 
 import br.com.alura.rh.ValidacaoException;
 import br.com.alura.rh.model.Funcionario;
@@ -6,7 +6,7 @@ import br.com.alura.rh.model.Funcionario;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class ValidacaoPercentualReajuste implements ValidacaoReajuste{
+public class ValidacaoPercentualReajuste implements ValidacaoReajuste {
 
     public void validar(Funcionario funcionario, BigDecimal aumento){
         BigDecimal salarioAtual = funcionario.getSalario();
